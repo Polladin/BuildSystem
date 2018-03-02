@@ -15,5 +15,11 @@
     "smc"           : "common, common_lib, sipwrapper",
     "api"           : "utils, common_lib, common",
     "tns"           : "",
-    "tas_common"    : "phoneparser, utils, common_lib, common, xpdb, netcom, pts"
+    "common_net"    : "",
+    "http"          : "",
+    "client"        : "",
+    "server"        : "",
+    "libTCPPinger"  : "",
+    "tas_common"    : "common_lib, xpdb, phoneparser, common_net, client, server, libTCPPinger",
+    "tas"           : "common_lib, xpdb, phoneparser, common_net, client, server, libTCPPinger"
 }

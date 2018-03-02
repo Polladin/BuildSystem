@@ -4,7 +4,7 @@ import os
 import shutil
 import pathlib
 
-from build_system.repo_models.files_factory import FilesFactory
+from build_system.repo_models.files_factory import FillFolder
 
 
 class FolderStructureCreator:
@@ -17,21 +17,28 @@ class FolderStructureCreator:
         #
         self.root_folder = root_folder
 
+        #
+        self.files_factory = FillFolder()
+
     def clear_folder(self):
         if os.path.isdir(self.root_folder):
             shutil.rmtree(self.root_folder)
 
     def place_structure(self):
-        self.parse_structure(self.root_folder, self.structure)
+        self.parse_structure(self.files_factory, self.root_folder, self.structure)
 
     @staticmethod
-    def parse_structure(path_to_current_folder, _sub_tree):
+    def parse_structure(files_factory, path_to_current_folder, _sub_tree, root_folder=None):
 
         if not isinstance(_sub_tree, type({})):
             raise RuntimeError('Wrong type for subtree')
 
         # For each folder in tree
         for _folder_name, _sub_tree in _sub_tree.items():
+
+            # Root folder
+            if root_folder is None:
+                root_folder = _folder_name
 
             # Folder path
             new_folder_path = path_to_current_folder + '/' + _folder_name
@@ -46,14 +53,20 @@ class FolderStructureCreator:
             if is_parent_folder:
 
                 # Place files for parent folder
-
+                files_factory.place_files(folder_path=new_folder_path,
+                                          folder_type=FillFolder.TYPE_PARENT_FOLDER,
+                                          subfolders_list=_sub_tree)
 
                 #
-                FolderStructureCreator.parse_structure(new_folder_path, _sub_tree)
+                FolderStructureCreator.parse_structure(files_factory, new_folder_path, _sub_tree)
 
             else:
 
                 # Place files for leaf folder
+                files_factory.place_files(folder_path=new_folder_path,
+                                          folder_type=_sub_tree,
+                                          root_project=root_folder,
+                                          include_folders_with_source=['common_lib', 'utils', 'common', 'xpdb', 'phoneparser'])
 
 
 folder_manager = FolderStructureCreator('D:/Projects/DINS/build_system/tas-group2', 'config/folder_structure.json')

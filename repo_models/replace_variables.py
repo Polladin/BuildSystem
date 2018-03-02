@@ -1,3 +1,4 @@
+import os
 
 
 class Replacement:
@@ -49,6 +50,10 @@ class Replacement:
             body += new_line
 
         # Save a file
+        folder = file_path[:file_path.rfind('/')]
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+
         new_file = open(file_path, 'w')
         new_file.write(body)
         new_file.close()
