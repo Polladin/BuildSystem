@@ -1,0 +1,18 @@
+common_lib :
+utils :
+common : common_net, http, libTCPPinger
+xpdb :
+sipwrapper :
+netcom :
+pts :
+tea :
+api :
+bla :
+presence :
+smc :
+tns :
+tas_common :
+pjsip :
+phoneparser :
+#TAS :
+#FAX :

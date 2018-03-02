@@ -1,0 +1,15 @@
+{
+    "common_lib" : "lib",
+    "utils" : "lib",
+    "common" : {
+                "common_net": "lib",
+                "http": {
+                            "client": "lib",
+                            "server": "lib"
+                        },
+                "libTCPPinger": "lib"
+                },
+    "xpdb" : "lib",
+    "phoneparser" : "lib"
+    "tas" : "exe"
+}

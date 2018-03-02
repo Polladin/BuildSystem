@@ -1,0 +1,19 @@
+
+{
+    "common_lib"    : "",
+    "pjsip"         : "",
+    "phoneparser"   : "",
+    "utils"         : "common_lib, phoneparser",
+    "common"        : "pjsip, common_lib, utils",
+    "xpdb"          : "utils",
+    "sipwrapper"    : "pjsip, common_lib",
+    "netcom"        : "pjsip, common, utils, common_lib",
+    "presence"      : "common, common_lib",
+    "pts"           : "utils, common_lib",
+    "tea"           : "utils, common_lib",
+    "bla"           : "common, common_lib, sipwrapper, pjsip",
+    "smc"           : "common, common_lib, sipwrapper",
+    "api"           : "utils, common_lib, common",
+    "tns"           : "",
+    "tas_common"    : "phoneparser, utils, common_lib, common, xpdb, netcom, pts"
+}
