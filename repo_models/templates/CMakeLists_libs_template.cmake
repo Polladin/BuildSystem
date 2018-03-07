@@ -12,6 +12,8 @@ message(STATUS "Source files : ${SOURCE_FILES}")
 # -------------------- ADD LIB --------------------------------------
 add_library(%LIB_NAME% STATIC ${SOURCE_FILES} ${HEADER_FILES})
 
+target_include_directories(%LIB_NAME% PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/headers)
+
 %TARGET_LINK_LIBRARIES%
 
 set_property(TARGET %LIB_NAME% PROPERTY FOLDER %PROJECT_FOLDER_NAME%)

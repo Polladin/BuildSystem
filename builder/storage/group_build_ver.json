@@ -1,0 +1,33 @@
+
+{
+  "common_lib" : {
+                  "hash_commit" : 'hash12312',
+                  "branch_name" : 'branch_name',
+                  "nexus_num"   : 1
+                 },
+  "utils":      {
+                  "hash_commit" : 'hash12312',
+                  "branch_name" : 'branch_name',
+                  "nexus_num"   : 1
+                 },
+  "common":     {
+                  "hash_commit" : 'hash12312',
+                  "branch_name" : 'branch_name',
+                  "nexus_num"   : 1
+                 },
+  "xpdb":       {
+                  "hash_commit" : 'hash12312',
+                  "branch_name" : 'branch_name',
+                  "nexus_num"   : 1
+                 },
+  "phoneparser": {
+                  "hash_commit" : 'hash12312',
+                  "branch_name" : 'branch_name',
+                  "nexus_num"   : 1
+                 },
+  "tas":        {
+                  "hash_commit" : 'hash12312',
+                  "branch_name" : 'branch_name',
+                  "nexus_num"   : 1
+                 }
+}

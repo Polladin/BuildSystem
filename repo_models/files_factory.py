@@ -86,7 +86,7 @@ class FillFolder:
         #       ...
         #   }
         for _lib_name, _lib_dep in json_dep.items():
-            dependency[_lib_name.lower()] = _lib_dep.lower().replace(',', '')
+            dependency[_lib_name] = _lib_dep.replace(',', '')
 
         return dependency
 
@@ -131,17 +131,20 @@ class FillFolder:
         project_name = folder_path.split('/')[-1].strip()
 
         # Lib dependency
-        link_libs = 'target_link_libraries(' + project_name + ' ' + self.dependency[project_name.lower()] + ')\n'
+        link_libs = ''
+        if self.dependency[project_name] != '':
+            link_libs = 'target_link_libraries(' + project_name + ' ' + self.dependency[project_name] + ')\n'
+
 
         # Folder in VS to contain a projects
-        project_folder = 'set_property(TARGET ' + project_name + ' PROPERTY FOLDER ' + root_project + ')\n'
+        # project_folder = 'set_property(TARGET ' + project_name + ' PROPERTY FOLDER ' + root_project + ')\n'
 
         # Place CMake file
         self.cmake_lib_factory.place_cmake(file_path=folder_path,
                                            vars={'PROJECT_NAME': project_name + '_project',
                                                  'LIB_NAME': project_name,
                                                  'TARGET_LINK_LIBRARIES': link_libs,
-                                                 'PROJECT_FOLDER_NAME': project_folder})
+                                                 'PROJECT_FOLDER_NAME': root_project})
 
         # Place header file
         self.lib_header_factory.place_with_name(file_path=folder_path,
@@ -151,7 +154,8 @@ class FillFolder:
 
         # Initialize cpp body
         cpp_body = '#include "' + project_name + '.h"\n\n'
-        cpp_body += 'int ' + project_name + ' (int a) { return std::to_string(a) + "_' + project_name + '"; }\n'
+        cpp_body += 'std::string ' + project_name + \
+                    ' (int a) { return std::to_string(a) + "_' + project_name + '"; }\n'
 
         # Place cpp file
         self.lib_main_factory.place_with_name(file_path=folder_path,
@@ -164,7 +168,7 @@ class FillFolder:
         project_name = folder_path.split('/')[-1].strip()
 
         # Lib dependency
-        link_libs = 'target_link_libraries(' + project_name + ' ' + self.dependency[project_name] + ')\n'
+        # link_libs = 'target_link_libraries(' + project_name + ' ' + self.dependency[project_name] + ')\n'
 
         # Add projects by source
         include_subdirectory = ''
@@ -175,31 +179,31 @@ class FillFolder:
         for _folder_with_src in include_folders_with_source:
 
             # Projects included by source
-            include_subdirectory += 'target_include_directories(' + project_name \
+            include_directory += 'target_include_directories(' + project_name \
                                     + ' PUBLIC ${SOURCES_FOR_DEPENDENCY_PROJECTS}/' \
-                                    + _folder_with_src + '/src)\n'
+                                    + _folder_with_src + '/headers)\n'
 
             # Include folders with headers
-            include_directory += 'add_subdirectory(${SOURCES_FOR_DEPENDENCY_PROJECTS}/' + project_name \
-                                 + ' ${IMPORTED_LIB_BY_SOURCES}/' + project_name + '/headers)\n'
+            include_subdirectory += 'add_subdirectory(${SOURCES_FOR_DEPENDENCY_PROJECTS}/' + _folder_with_src \
+                                 + ' ${IMPORTED_LIB_BY_SOURCES}/' + _folder_with_src + ')\n'
 
-            include_main_cpp += '#include "' + project_name + '.h";\n'
-            cout_main_cpp += '    std::cout << ' + project_name + '(10) << std::endl;\n'
+            include_main_cpp += '#include "' + _folder_with_src.split('/')[-1] + '.h";\n'
+            cout_main_cpp += '    std::cout << ' + _folder_with_src.split('/')[-1] + '(10) << std::endl;\n'
 
         # Place CMake file
         self.cmake_exe_factory.place_cmake(file_path=folder_path,
                                            vars={'PROJECT_NAME': project_name + '_project',
                                                  'TARGET': project_name,
-                                                 'LINKED_LIBS': link_libs,
+                                                 'LINKED_LIBS': self.dependency[project_name],
                                                  'INCLUDE_SUBDIRECTORY': include_subdirectory,
                                                  'TARGET_INCLUDE_DIRS': include_directory})
         # Place cpp file
         cpp_body = cout_main_cpp + '\n    std::cin.get();\n'
 
-        self.lib_main_factory.place_with_name(file_path=folder_path,
+        self.exe_main_factory.place_with_name(file_path=folder_path,
                                               file_name=project_name + '.cpp',
                                               vars={'INCLUDES': include_main_cpp,
-                                                    'CODE_CPP': cpp_body})
+                                                    'CPP_CODE': cpp_body})
 
     def place_for_libexe(self, folder_path):
         pass

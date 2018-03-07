@@ -28,7 +28,7 @@ class FolderStructureCreator:
         self.parse_structure(self.files_factory, self.root_folder, self.structure)
 
     @staticmethod
-    def parse_structure(files_factory, path_to_current_folder, _sub_tree, root_folder=None):
+    def parse_structure(files_factory, path_to_current_folder, _sub_tree, root_folder=None, is_root_folder=True):
 
         if not isinstance(_sub_tree, type({})):
             raise RuntimeError('Wrong type for subtree')
@@ -37,7 +37,7 @@ class FolderStructureCreator:
         for _folder_name, _sub_tree in _sub_tree.items():
 
             # Root folder
-            if root_folder is None:
+            if is_root_folder:
                 root_folder = _folder_name
 
             # Folder path
@@ -58,7 +58,7 @@ class FolderStructureCreator:
                                           subfolders_list=_sub_tree)
 
                 #
-                FolderStructureCreator.parse_structure(files_factory, new_folder_path, _sub_tree)
+                FolderStructureCreator.parse_structure(files_factory, new_folder_path, _sub_tree, root_folder, False)
 
             else:
 
@@ -66,7 +66,10 @@ class FolderStructureCreator:
                 files_factory.place_files(folder_path=new_folder_path,
                                           folder_type=_sub_tree,
                                           root_project=root_folder,
-                                          include_folders_with_source=['common_lib', 'utils', 'common', 'xpdb', 'phoneparser'])
+                                          include_folders_with_source=['common_lib', 'utils', 'common/common_net',
+                                                                       'common/libTCPPinger',
+                                                                       'common/http/client', 'common/http/server',
+                                                                       'xpdb', 'phoneparser'])
 
 
 folder_manager = FolderStructureCreator('D:/Projects/DINS/build_system/tas-group2', 'config/folder_structure.json')
