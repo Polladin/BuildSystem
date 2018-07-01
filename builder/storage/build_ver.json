@@ -1,0 +1,32 @@
+{
+  "common_lib": {
+    "hash_commit": "0d351de3d98cb9a0338abed922cca354af50f430",
+    "branch_name": "default",
+    "nexus_place": 45
+  },
+  "utils": {
+    "hash_commit": "adea1076eb4e00e6dc3fdb0161c5d00e3502d106",
+    "branch_name": "default",
+    "nexus_place": 30
+  },
+  "common": {
+    "hash_commit": "69f078b26189e752f89d7bb5806794735ad140a6",
+    "branch_name": "default",
+    "nexus_place": 46
+  },
+  "xpdb": {
+    "hash_commit": "c7ee43d801f6a741fdfe8659960fc666ff249e2d",
+    "branch_name": "default",
+    "nexus_place": 30
+  },
+  "phoneparser": {
+    "hash_commit": "13cb2e0122c198cd7f8b3ca3c417ff48dffcd691",
+    "branch_name": "default",
+    "nexus_place": 30
+  },
+  "tas": {
+    "hash_commit": "f315473b78efc16ffe261f4388955938026fcc37",
+    "branch_name": "default",
+    "nexus_place": 30
+  }
+}
