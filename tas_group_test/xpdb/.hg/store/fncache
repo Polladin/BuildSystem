@@ -1,0 +1,6 @@
+data/.hgsubstate.i
+data/src/xpdb.cpp.i
+data/.hgsub.i
+data/dependency.txt.i
+data/headers/xpdb.h.i
+data/CMakeLists.txt.i

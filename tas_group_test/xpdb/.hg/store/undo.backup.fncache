@@ -1,0 +1,4 @@
+data/dependency.txt.i
+data/headers/xpdb.h.i
+data/src/xpdb.cpp.i
+data/CMakeLists.txt.i

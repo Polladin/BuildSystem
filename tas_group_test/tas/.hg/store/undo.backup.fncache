@@ -1,0 +1,4 @@
+data/dependency.txt.i
+data/readme.txt.i
+data/src/tas.cpp.i
+data/CMakeLists.txt.i

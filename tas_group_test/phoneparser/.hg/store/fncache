@@ -1,0 +1,6 @@
+data/.hgsubstate.i
+data/.hgsub.i
+data/dependency.txt.i
+data/headers/phoneparser.h.i
+data/src/phoneparser.cpp.i
+data/CMakeLists.txt.i

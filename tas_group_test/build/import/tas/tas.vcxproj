@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{DD539D57-AE46-3238-B8A7-566F25D7AB28}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>tas</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\DINS\HG_server\tas_group_test\build\import\tas\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tas.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tas</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\DINS\HG_server\tas_group_test\build\import\tas\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tas.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tas</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\DINS\HG_server\tas_group_test\build\import\tas\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tas.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tas</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\DINS\HG_server\tas_group_test\build\import\tas\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tas.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tas</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\progs\CMake\bin\cmake.exe -E copy D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/Debug/tas.exe D:/Projects/DINS/HG_server/tas_group_test/build/publish
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libs\Debug\common_lib.lib;..\libs\Debug\xpdb.lib;..\libs\Debug\phoneparser.lib;..\libs\Debug\common_net.lib;..\libs\Debug\client.lib;..\libs\Debug\server.lib;..\libs\Debug\libTCPPinger.lib;..\libs\Debug\utils.lib;..\libs\Debug\common_lib.lib;..\libs\Debug\phoneparser.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Projects/DINS/HG_server/tas_group_test/build/import/libs;D:/Projects/DINS/HG_server/tas_group_test/build/import/libs/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/DINS/HG_server/tas_group_test/build/import/libs/Debug/tas.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/Debug/tas.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\progs\CMake\bin\cmake.exe -E copy D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/Release/tas.exe D:/Projects/DINS/HG_server/tas_group_test/build/publish
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libs\Release\common_lib.lib;..\libs\Release\xpdb.lib;..\libs\Release\phoneparser.lib;..\libs\Release\common_net.lib;..\libs\Release\client.lib;..\libs\Release\server.lib;..\libs\Release\libTCPPinger.lib;..\libs\Release\utils.lib;..\libs\Release\common_lib.lib;..\libs\Release\phoneparser.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Projects/DINS/HG_server/tas_group_test/build/import/libs;D:/Projects/DINS/HG_server/tas_group_test/build/import/libs/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/DINS/HG_server/tas_group_test/build/import/libs/Release/tas.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/Release/tas.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\progs\CMake\bin\cmake.exe -E copy D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/MinSizeRel/tas.exe D:/Projects/DINS/HG_server/tas_group_test/build/publish
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libs\MinSizeRel\common_lib.lib;..\libs\MinSizeRel\xpdb.lib;..\libs\MinSizeRel\phoneparser.lib;..\libs\MinSizeRel\common_net.lib;..\libs\MinSizeRel\client.lib;..\libs\MinSizeRel\server.lib;..\libs\MinSizeRel\libTCPPinger.lib;..\libs\MinSizeRel\utils.lib;..\libs\MinSizeRel\common_lib.lib;..\libs\MinSizeRel\phoneparser.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Projects/DINS/HG_server/tas_group_test/build/import/libs;D:/Projects/DINS/HG_server/tas_group_test/build/import/libs/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/DINS/HG_server/tas_group_test/build/import/libs/MinSizeRel/tas.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/MinSizeRel/tas.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\DINS\HG_server\tas_group_test\build\import\headers;D:\Projects\DINS\HG_server\tas_group_test\common_lib\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\xpdb\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\utils\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\phoneparser\interface_headers;D:\Projects\DINS\HG_server\tas_group_test\common\interface_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\progs\CMake\bin\cmake.exe -E copy D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/RelWithDebInfo/tas.exe D:/Projects/DINS/HG_server/tas_group_test/build/publish
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libs\RelWithDebInfo\common_lib.lib;..\libs\RelWithDebInfo\xpdb.lib;..\libs\RelWithDebInfo\phoneparser.lib;..\libs\RelWithDebInfo\common_net.lib;..\libs\RelWithDebInfo\client.lib;..\libs\RelWithDebInfo\server.lib;..\libs\RelWithDebInfo\libTCPPinger.lib;..\libs\RelWithDebInfo\utils.lib;..\libs\RelWithDebInfo\common_lib.lib;..\libs\RelWithDebInfo\phoneparser.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Projects/DINS/HG_server/tas_group_test/build/import/libs;D:/Projects/DINS/HG_server/tas_group_test/build/import/libs/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/DINS/HG_server/tas_group_test/build/import/libs/RelWithDebInfo/tas.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/RelWithDebInfo/tas.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\DINS\HG_server\tas_group_test\tas\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/DINS/HG_server/tas_group_test/tas/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\progs\CMake\bin\cmake.exe -HD:/Projects/DINS/HG_server/tas_group_test -BD:/Projects/DINS/HG_server/tas_group_test/build --check-stamp-file D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Projects/DINS/HG_server/tas_group_test/tas/CMakeLists.txt;D:\Projects\DINS\HG_server\tas_group_test\tas\CMakeLists.txt;D:\Projects\DINS\HG_server\tas_group_test\cmake_common\publish.cmake;D:\Projects\DINS\HG_server\tas_group_test\tas\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\DINS\HG_server\tas_group_test\build\import\tas\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/DINS/HG_server/tas_group_test/tas/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\progs\CMake\bin\cmake.exe -HD:/Projects/DINS/HG_server/tas_group_test -BD:/Projects/DINS/HG_server/tas_group_test/build --check-stamp-file D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Projects/DINS/HG_server/tas_group_test/tas/CMakeLists.txt;D:\Projects\DINS\HG_server\tas_group_test\tas\CMakeLists.txt;D:\Projects\DINS\HG_server\tas_group_test\cmake_common\publish.cmake;D:\Projects\DINS\HG_server\tas_group_test\tas\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\DINS\HG_server\tas_group_test\build\import\tas\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/DINS/HG_server/tas_group_test/tas/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\progs\CMake\bin\cmake.exe -HD:/Projects/DINS/HG_server/tas_group_test -BD:/Projects/DINS/HG_server/tas_group_test/build --check-stamp-file D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Projects/DINS/HG_server/tas_group_test/tas/CMakeLists.txt;D:\Projects\DINS\HG_server\tas_group_test\tas\CMakeLists.txt;D:\Projects\DINS\HG_server\tas_group_test\cmake_common\publish.cmake;D:\Projects\DINS\HG_server\tas_group_test\tas\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\DINS\HG_server\tas_group_test\build\import\tas\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/DINS/HG_server/tas_group_test/tas/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\progs\CMake\bin\cmake.exe -HD:/Projects/DINS/HG_server/tas_group_test -BD:/Projects/DINS/HG_server/tas_group_test/build --check-stamp-file D:/Projects/DINS/HG_server/tas_group_test/build/import/tas/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Projects/DINS/HG_server/tas_group_test/tas/CMakeLists.txt;D:\Projects\DINS\HG_server\tas_group_test\tas\CMakeLists.txt;D:\Projects\DINS\HG_server\tas_group_test\cmake_common\publish.cmake;D:\Projects\DINS\HG_server\tas_group_test\tas\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\DINS\HG_server\tas_group_test\build\import\tas\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Projects\DINS\HG_server\tas_group_test\tas\src\tas.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Projects\DINS\HG_server\tas_group_test\build\ZERO_CHECK.vcxproj">
+      <Project>{476CDED8-BED2-3246-BD31-D45AE747B465}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\DINS\HG_server\tas_group_test\build\import\common\http\client\client.vcxproj">
+      <Project>{DA3BF696-E919-343D-BD4C-C19B24DAAE75}</Project>
+      <Name>client</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\DINS\HG_server\tas_group_test\build\import\common_lib\common_lib.vcxproj">
+      <Project>{AFFF73F3-C3FA-392C-A535-06AAA003B9F5}</Project>
+      <Name>common_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\DINS\HG_server\tas_group_test\build\import\common\common_net\common_net.vcxproj">
+      <Project>{9A7502DD-62B5-385E-A0D9-23C524E62C34}</Project>
+      <Name>common_net</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\DINS\HG_server\tas_group_test\build\import\common\libTCPPinger\libTCPPinger.vcxproj">
+      <Project>{916A7740-0A52-3959-8889-2A4955A17BD6}</Project>
+      <Name>libTCPPinger</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\DINS\HG_server\tas_group_test\build\import\phoneparser\phoneparser.vcxproj">
+      <Project>{B14C6995-404F-3D9C-8DA7-1DF0C181DEDF}</Project>
+      <Name>phoneparser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\DINS\HG_server\tas_group_test\build\import\common\http\server\server.vcxproj">
+      <Project>{BFFDCC43-2C95-3679-B852-18057DF26018}</Project>
+      <Name>server</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\DINS\HG_server\tas_group_test\build\import\utils\utils.vcxproj">
+      <Project>{AD4699D0-F2FA-3F76-8877-6B9C0411AC4D}</Project>
+      <Name>utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\DINS\HG_server\tas_group_test\build\import\xpdb\xpdb.vcxproj">
+      <Project>{80B3E442-7946-3CF0-B51E-6921D22974BD}</Project>
+      <Name>xpdb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

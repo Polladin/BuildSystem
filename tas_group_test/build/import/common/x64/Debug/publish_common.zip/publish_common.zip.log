@@ -1,0 +1,6 @@
+﻿  Building Custom Rule D:/Projects/DINS/HG_server/tas_group_test/common/CMakeLists.txt
+  CMake does not need to re-run because D:/Projects/DINS/HG_server/tas_group_test/build/import/common/CMakeFiles/generate.stamp is up-to-date.
+  common_net.lib
+  libTCPPinger.lib
+  client.lib
+  server.lib

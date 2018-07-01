@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\DINS\HG_server\tas_group_test\common\CMakeLists.txt" />
+    <CustomBuild Include="D:\Projects\DINS\HG_server\tas_group_test\build\CMakeFiles\3447f90e2f35869460aeef34ff977b19\publish_common.zip.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projects\DINS\HG_server\tas_group_test\build\import\common\CMakeFiles\publish_common.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AD070CC7-1A89-3628-BEDE-3A14FA21233A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
